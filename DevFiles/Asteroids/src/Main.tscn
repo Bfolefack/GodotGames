@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/Entities/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/AstSpawner.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/GUI/HealthBar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/GUI/GameOver.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/GUI/Score.tscn" type="PackedScene" id=5]
+
+[node name="Main" type="Node2D"]
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="Score" parent="GUI" instance=ExtResource( 5 )]
+
+[node name="GameOver" parent="GUI" instance=ExtResource( 4 )]
+
+[node name="HealthBar" parent="GUI" instance=ExtResource( 3 )]
+position = Vector2( 120, 88 )
+
+[node name="Game" type="CanvasLayer" parent="."]
+
+[node name="Player" parent="Game" instance=ExtResource( 1 )]
+position = Vector2( 544, 328 )
+
+[node name="AstSpawner" parent="Game" instance=ExtResource( 2 )]

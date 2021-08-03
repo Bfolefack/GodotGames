@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Light2D.tscn" type="PackedScene" id=1]
+[ext_resource path="res://background.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2( 532.974, 325.972 )
+scale = Vector2( 9.9963, 7.45964 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 532.974, 325.972 )
+scale = Vector2( 9.9963, 7.45964 )
+texture = ExtResource( 2 )
+
+[node name="Light2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 284.069, 171.247 )
+scale = Vector2( 9.9963, 7.45964 )

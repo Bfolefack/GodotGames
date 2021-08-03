@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Gui.png" type="Texture" id=1]
+[ext_resource path="res://src/GUI/GameOver.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Space_Font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://src/GUI/GUIScore.gd" type="Script" id=4]
+[ext_resource path="res://src/GUI/Highscore.gd" type="Script" id=5]
+[ext_resource path="res://src/GUI/Quit.gd" type="Script" id=6]
+[ext_resource path="res://src/GUI/Restart.gd" type="Script" id=7]
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_top = 5.0
+margin_right = -2.0
+margin_bottom = 5.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gui" type="Sprite" parent="."]
+position = Vector2( 504, 288 )
+texture = ExtResource( 1 )
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 217.0
+margin_top = 333.0
+margin_right = 229.0
+margin_bottom = 353.0
+rect_scale = Vector2( 14.4879, 8.19426 )
+flat = true
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Restart" type="Button" parent="."]
+margin_left = 219.0
+margin_top = 163.0
+margin_right = 231.0
+margin_bottom = 183.0
+rect_scale = Vector2( 14.1855, 8.27963 )
+flat = true
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Highscore" type="Label" parent="."]
+margin_left = 418.0
+margin_top = 403.0
+margin_right = 842.0
+margin_bottom = 515.0
+custom_fonts/font = ExtResource( 3 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GUIScore" type="Label" parent="."]
+margin_left = 410.0
+margin_top = 219.0
+margin_right = 866.0
+margin_bottom = 307.0
+custom_fonts/font = ExtResource( 3 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

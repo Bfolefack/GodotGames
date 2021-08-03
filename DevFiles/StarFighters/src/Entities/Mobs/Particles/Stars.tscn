@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 1.0
+emission_shape = 2
+emission_box_extents = Vector3( 640, 360, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 0, 0 )
+angular_velocity = 100.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 5.0
+scale_random = 0.25
+
+[node name="Stars" type="Particles2D"]
+position = Vector2( 640, 360 )
+amount = 200
+lifetime = 600.0
+preprocess = 600.0
+visibility_rect = Rect2( -100, -100, 1, 1 )
+process_material = SubResource( 1 )

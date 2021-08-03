@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/Entities/Mobs/Player.tscn" type="PackedScene" id=1]
+
+[node name="Test" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 320.616, 254.362 )
+bounciness = 2.0
+
+[node name="Player2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 709.958, 293.398 )
+bounciness = 2.0
+player_num = 1

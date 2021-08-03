@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Space_Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/GUI/Score.gd" type="Script" id=2]
+
+[node name="Score" type="Label"]
+margin_left = 472.0
+margin_top = 16.0
+margin_right = 1008.0
+margin_bottom = 101.0
+custom_fonts/font = ExtResource( 1 )
+text = "Score: "
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
